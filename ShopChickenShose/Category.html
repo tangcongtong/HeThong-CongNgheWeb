@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleCategory.css">
+    <link rel="stylesheet" href="./css/styleLogin.css">
+    <link rel="stylesheet" href="./css/styleRegistration.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.14.0-web/css/all.min.css">
+    <title>Danh sách sản phẩm</title>
+</head>
+
+<body>
+    <div class="container-fuild">
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png " width="100px">
+                <div class="logon-font">
+                    Chicken Shoes
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Tìm kiếm . . .">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">
+                        <a class="btn-search_link" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="header-right">
+                <ul class="list-header_right">
+                    <li class="header-cart">
+                        <a href="./cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="header-login " onclick="dangnhap()">
+                        <a href="#" data-toggle="" onclick="dangnhap()">
+                            <i onclick="dangnhap()" class="fas fa-user-alt"></i>
+                        </a>
+                        <!-- <ul class="dropdown-menu">
+                            <li onclick="dangnhap()"><a href="#">Đăng nhập</a></li>
+                            <li><a href="#">Đăng kí</a></li>
+                            <li><a href="#">Đăng xuất</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--Navbar menu-->
+        <nav>
+            <!--Nav Pc-->
+            <ul class="menu">
+                <li>
+                    <a href="./trangchu.html">TRANG CHỦ</a>
+                </li>
+                <li>
+                    <a href="./gioithieu.html">GIỚI THIỆU</a>
+                </li>
+                <li>
+                    <a href="./Category.html">SẢN PHẨM</a>
+                </li>
+                <li>
+                    <a href="./Category.html">PHỤ KIỆN</a>
+                </li>
+                <li>
+                    <a href="./sitemap.html">SITE MAP</a>
+                </li>
+            </ul>
+            <!--Nav mobile, tablet-->
+            <label for="nav_input" class="menu_btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" hidden class="nav_mlb" id="nav_input">
+            <label for="nav_input" class="nav_overlay"></label>
+            <div class="menu_mobile">
+                <label for="nav_input" class="menu_close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul class="menu_mobile_list">
+                    <li>
+                        <input class="menu_mobile_list-input" type="search" placeholder="Tìm kiếm">
+                        <span class="menu_mobile_list-input-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="./trangchu.html">TRANG CHỦ</a>
+                    </li>
+                    <li>
+                        <a href="./gioithieu.html">GIỚI THIỆU</a>
+                    </li>
+                    <li>
+                        <a href="./Category.html">SẢN PHẨM</a>
+                    </li>
+                    <li>
+                        <a href="./Category.html">PHỤ KIỆN</a>
+                    </li>
+                    <li>
+                        <a href="./sitemap.html">SITE MAP</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <div class="main">
+            <div class="row">
+                <div id="click-hidden" class="menu-category col-md-3 col-lg-2">
+                    <div class="menu-category-list">
+                        <h3 class="menu-category-name">
+                            THƯƠNG HIỆU
+                        </h3>
+                        <hr>
+                        <div class="menu-category-item dropright">
+                            <button class="menu-category-item-button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ADIDAS
+                            </button>
+                            <div class="dropdown-menu" style="z-index: 1;" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Alphabounce</a>
+                                <a class="dropdown-item" href="#">Falcon</a>
+                                <a class="dropdown-item" href="#">NMD</a>
+                                <a class="dropdown-item" href="#">Prophere</a>
+                                <a class="dropdown-item" href="#">Stan Smith</a>
+                                <a class="dropdown-item" href="#">SuperStar</a>
+                                <a class="dropdown-item" href="#">Ultraboost</a>
+                            </div>
+                        </div>
+                        <div class="menu-category-item dropright">
+                            <button class="menu-category-item-button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                NIKE
+                            </button>
+                            <div class="dropdown-menu" style="z-index: 1;" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Air Force 1</a>
+                                <a class="dropdown-item" href="#">Air Max</a>
+                                <a class="dropdown-item" href="#">Jordan 1</a>
+                                <a class="dropdown-item" href="#">Uptempo </a>
+                                <a class="dropdown-item" href="#">Cortez </a>
+                                <a class="dropdown-item" href="#">VaporMax ACE </a>
+                                <a class="dropdown-item" href="#">SF AF1</a>
+                            </div>
+                        </div>
+                        <div class="menu-category-item dropright">
+                            <button class="menu-category-item-button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                CONVERSE
+                            </button>
+                            <div class="dropdown-menu" style="z-index: 1;" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Converse 1970s</a>
+                                <a class="dropdown-item" href="#">Converse Jack Purcell</a>
+                                <a class="dropdown-item" href="#">Converse One Star</a>
+                                <a class="dropdown-item" href="#">Converse Chuck Taylor All Star</a>
+                                <a class="dropdown-item" href="#">Converse Chuck Taylor II</a>
+                            </div>
+                        </div>
+                        <div class="menu-category-item dropright">
+                            <button class="menu-category-item-button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                KHÁC
+                            </button>
+                            <div class="dropdown-menu" style="z-index: 1;" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Puma</a>
+                                <a class="dropdown-item" href="#">Vans</a>
+                                <a class="dropdown-item" href="#">Balenciaga</a>
+                                <a class="dropdown-item" href="#">Fila</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3 class="menu-category-name">
+                            PHỤ KIỆN
+                        </h3>
+                        <hr>
+                        <div class="menu-category-item dropright">
+                            <button class="menu-category-item-button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                DÂY GIÀY
+                            </button>
+                            <div class="dropdown-menu" style="z-index: 1;" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Alphabounce</a>
+                                <a class="dropdown-item" href="#">Falcon</a>
+                                <a class="dropdown-item" href="#">NMD</a>
+                            </div>
+                        </div>
+                        <div class="menu-category-item dropright">
+                            <button class="menu-category-item-button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                KHÁC
+                            </button>
+                            <div class="dropdown-menu" style="z-index: 1;" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Air Force 1</a>
+                                <a class="dropdown-item" href="#">Air Max</a>
+                                <a class="dropdown-item" href="#">Jordan 1</a>
+                                <a class="dropdown-item" href="#">Uptempo </a>
+                                <a class="dropdown-item" href="#">Cortez </a>
+                                <a class="dropdown-item" href="#">VaporMax ACE </a>
+                                <a class="dropdown-item" href="#">SF AF1</a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row menu-category-item-danhmucsanpham">
+                            <div class="menu-category-item-name">
+                                <span><strong>GIÁ SẢN PHẨM</strong></span>
+                            </div>
+                            <hr>
+                            <div class="menu-category-item-thuonghieu-list">
+                                <label class="menu-category-item-list-values">
+                                    <input type="checkbox" class="form-check-input">
+                                    <span class="price-check">Giá dưới 500.000đ</span>
+                                </label>
+                                <label class="menu-category-item-list-values">
+                                    <input type="checkbox" class="form-check-input">
+                                    <span class="price-check"> 500.000đ - 1.000.000đ</span>
+                                </label>
+                                <label class="menu-category-item-list-values">
+                                    <input type="checkbox" class="form-check-input">
+                                    <span class="price-check">1.000.000đ - 1.500.000đ</span>
+                                </label>
+                                <label class="menu-category-item-list-values">
+                                    <input type="checkbox" class="form-check-input">
+                                    <span class="price-check">1.500.000đ - 2000.000đ</span>
+                                </label>
+                                <label class="menu-category-item-list-values">
+                                    <input type="checkbox" class="form-check-input">
+                                    <span class="price-check">Trên 2000.000đ</span>
+                                </label>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class=" row menu-category-item-mausac">
+                            <div class="menu-category-item-name">
+                                <span><strong>MÀU SẮC</strong></span>
+                            </div>
+                            <hr>
+                            <div class="menu-category-item-mausac-list">
+                                <div class="round menu-category-item-list-values">
+                                    <input type="checkbox" id="checkbox" />
+                                    <label for="checkbox"></label>
+                                </div>
+                                <div class="round menu-category-item-list-values">
+                                    <input type="checkbox" id="checkbox" />
+                                    <label for="checkbox"></label>
+                                </div>
+                                <div class="round menu-category-item-list-values">
+                                    <input type="checkbox" id="checkbox" />
+                                    <label for="checkbox"></label>
+                                </div>
+
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-10 body-category">
+                    <div class="product-header-link">
+                        <div class="product-header-link-left">
+                            <a href="trangchu.html" title="Back to the homepage">
+                                <span>Trang chủ</span>
+                            </a>
+                            <span><i class="fas fa-angle-right"></i></span>
+                            <a href="">
+                                <span>ADIDAS</span>
+                            </a>
+                        </div>
+                        <!-- <div class="product-header-link-right">
+                            <span><a href="#">Mới nhất</a></span>
+                            <span><a href="#">Phổ biến</a></span>
+                            <span><a href="#">Giá</a></span>
+                        </div> -->
+                    </div>
+                    <hr>
+                    <div class="product-category justify-content-center">
+                        <div class="product-list row ">
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Addias-Prophere-Grey-Solar-Red/Addias-Prophere-Grey-Solar-Red1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Addias Prophere Grey Solar Red</h5>
+                                        <p class="product-item-price">2.560.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Addias-Stan-Smith-Fairway/Addias-Stan-Smith-Fairway1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Addias Stan Smith Fairwa White</h5>
+                                        <p class="product-item-price">1.500.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Addias Superstar Running White</h5>
+                                        <p class="product-item-price">3.500.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Adidas-Alphabounce-Beyond-Black/Adidas-Alphabounce-Beyond-Black1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Adidas Alphabounce Beyond Black</h5>
+                                        <p class="product-item-price">2.050.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Adidas-Alphabounce-Beyond-Cloud-White/Adidas-Alphabounce-Beyond-Cloud-White1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Adidas Alphabounce Beyond Cloud White</h5>
+                                        <p class="product-item-price">999.000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Adidas-Alphabounce-Beyond-Grey/Adidas-Alphabounce-Beyond-Grey1-removebg-preview-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Adidas Alphabounce Beyond Grey and Red</h5>
+                                        <p class="product-item-price">2.100.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Adidas-Alphabounce-Instinct-Core-Black-Silver-Metallic/Adidas-Alphabounce-Instinct-Core-Black-Silver-Metallic1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Adidas Alphabounce Instinct Core Black</h5>
+                                        <p class="product-item-price">4.500.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Adidas-NMD-R1-Grey/Adidas-NMD-R1-Grey1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Adidas NMD R1 Grey and Black Color</h5>
+                                        <p class="product-item-price">1.505.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Adidas-Ultra-Boost-4.0-Grey-Three/Adidas-Ultra-Boost-4.0-Grey-Three1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Adidas Ultra Boost 4.0 Grey Three Black</h5>
+                                        <p class="product-item-price">2.580.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Adidas-Ultra-Boost-4.0-Triple-Black/Adidas-Ultra-Boost-4.0-Triple-Black1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Adidas Ultra Boost 4.0 Triple Black and White</h5>
+                                        <p class="product-item-price">3.550.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Adidas-Ultra-Boost-4.0-Triple-White/Adidas-Ultra-Boost-4.0-Triple-White1-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Adidas Ultra Boost 4.0 Triple White</h5>
+                                        <p class="product-item-price">2.800.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-item">
+                                <a href="./chitiet.html" class="product-item-url">
+                                    <img src="img/Addias/Yeezy-Boost-350-V2-Clay/Yeezy-Boost-350-V2-Clay-removebg-preview.png"
+                                        alt="">
+                                    <div>
+                                        <h5 class="product-item-name">Yeezy Boost 350 V2 Clay Session 4 2019</h5>
+                                        <p class="product-item-price">2.230.000 đ</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+
+                        </div>
+                        <div class="page row ">
+                            <ul class="pagination justify-content-center d-flex">
+                                <li class="active">
+                                    <a href=""><i class="fas fa-angle-double-left"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-left"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">...</a>
+                                </li>
+                                <li>
+                                    <a href="#">10</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-right"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-list_item">
+                <h5>GIỚI THIỆU</h5>
+                <hr>
+                <p>Chào mừng bạn đến với Chicken Shoes, nơi mang lại trải nghiệm tốt nhất cho bạn về các loại</p>
+            </div>
+            <div class="footer-list_item">
+                <h5>ĐỊA CHỈ</h5>
+                <hr>
+                <ul class="footer-menu_address">
+                    <li>
+                        <a href="#" class="footer-list_item-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>12 Nguyễn Văn Bảo, phường 4, quân Gò Vấp, TP.HCM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-list_item-link">
+                            <i class="fas fa-phone-square-alt"></i>
+                            <p>01245656</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-list_item-link">
+                            <i class="far fa-envelope"></i>
+                            <p>lengocanhdao226@gmail.com</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list_item" id="footer-list_item3">
+                <h5>LIÊN HỆ</h5>
+                <hr>
+                <p>19429101_Lê Ngọc Anh Đào</p>
+                <p>19429861_Tăng Công Tổng</p>
+            </div>
+        </div>
+    </div>
+
+     <!--Login form-->
+     <div class="login" id="dangnhap">
+        <div class="mangngoai" onclick="dangnhap()"
+            style="background-color: rgba(27, 27, 27, 0.308);; width: 100%;height: 100%;position: fixed;"></div>
+        <div class="loginform " style="position: fixed;">
+            <div class="row justify-content-center block-login" style="background-color: rgba(26, 25, 25, 0.829) ;">
+                <div class="loginform-header col-md-12  ">
+                    <div class="d-flex justify-content-center ">
+                        <h1 class="">Đăng nhập</h1>
+                        <img class="login-img-logo" src="./img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="loginform-body col-md-12 justify-content-center">
+                    <form action="" class="" id="formlogin">
+                        <div class="loginform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text icon-input">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <input type="text" class="form-control input-input" name="username" id="txtusername"
+                                    placeholder="Tên tài khoản">
+                            </div>
+                            <span class="text-danger" id="tbuser"></span>
+                        </div>
+                        <div class="loginform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text icon-input">
+                                    <i class="fas fa-key"></i>
+                                </span>
+                                <input type="password" class="form-control input-input" name="password" id="password"
+                                    placeholder="Mật khẩu">
+                            </div>
+                            <span class="text-danger" id="tbpassword"></span>
+                        </div>
+                        <div class="loginform-body-item form-group form-check nhoquenmatkhau">
+                            <input type="checkbox" class="form-check-input" id="remember-me">
+                            <label class="form-check-label remember" for="remember-me">Nhớ mật khẩu</label>
+                            <a class="quenmạkhau ">Quên mật khẩu</a>
+                        </div>
+                        <div class="buttonlogin d-flex justify-content-center col-sm-12">
+                            <button id="btndangnhap" class="btn-login  btn btn-primary btn-lg ">Login</button>
+                        </div>
+                        <div class="login-or d-flex justify-content-center">
+                            <div class="or">
+                                <h3>OR</h3>
+                            </div>
+                        </div>
+                        <div class="icon-login-or d-flex justify-content-center">
+                            <a href="http://" class="icon-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="http://" class="icon-google">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <div class="chuacomatkhau d-flex justify-content-center">
+                            <span class="">Chưa có tài khoản?</span>
+                            <p onclick="dangki()"> Click here</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- register -->
+    <div class="registration" id="dangki">
+        <div class="mangngoai" onclick="dangki()"
+            style="background-color: rgba(27, 27, 27, 0.308);; width: 100%;height: 100%;position: fixed;"></div>
+        <div class="registrationform " style="position: fixed;">
+            <div class="row justify-content-center block-registration"
+                style="background-color: rgba(26, 25, 25, 0.829) ;">
+                <div class="registrationform-header ">
+                    <div class="col-md-12  d-flex justify-content-center">
+                        <h1 class="">Đăng ký</h1>
+                        <img class="registration-img-logo" src="./img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="registrationform-body col-md-12 justify-content-center">
+                    <form action="" class="" id="formdangki">
+                        <div class="registrationform-body-item form-group">
+                            <div class="d-flex">
+                                <span class="input-group-text registrationform-icon-input">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </span>
+                                <input type="text" class=" form-control registrationform-input" name="sodienthoai"
+                                    id="txtsodienthoai" placeholder="Số điện thoại">
+                            </div>
+                            <span class="text-danger" id="tbsodienthoai"></span>
+                        </div>
+                        <div class="registrationform-body-item form-group  ">
+                            <div class="d-flex"> <span class="input-group-text registrationform-icon-input">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <input type="text" class="form-control registrationform-input" name="username"
+                                    id="txtusername" placeholder="Tên tài khoản">
+                            </div>
+                            <span class="text-danger" id="tbusername"></span>
+                        </div>
+                        <div class="registrationform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text registrationform-icon-input">
+                                    <i class="fas fa-key"></i>
+                                </span>
+                                <input type="password" class="form-control registrationform-input" name="password"
+                                    id="password" placeholder="Mật khẩu">
+                            </div>
+                            <span class="text-danger" id="tbpassword"></span>
+                        </div>
+                        <div class="registrationform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text registrationform-icon-input ">
+                                    <img class="confirm-password" src="./img/confirm-password.png" alt="">
+                                    </i>
+                                </span>
+                                <input type="password" class="form-control registrationform-input"
+                                    name="confirm-password" id="confirmpassword" placeholder="Xác thực mật khẩu ">
+                            </div>
+                            <span class="text-danger" id="tbconfirmpassword"></span>
+
+                        </div>
+                        <div class="buttonregistration d-flex justify-content-center col-sm-12">
+                            <button class="btn-registration  btn btn-primary btn-lg ">Submit</button>
+                        </div>
+                        <div class="registration-or d-flex justify-content-center">
+                            <div class="or">
+                                <h3>OR</h3>
+                            </div>
+                        </div>
+                        <div class="icon-registration-or d-flex justify-content-center">
+                            <a href="http://" class="icon-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="http://" class="icon-google">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <div class="dacotaikhoan d-flex justify-content-center">
+                            <span class="">Đã có tài khoản?</span>
+                            <p onclick="dangnhap()"> Click here</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/trangchu.js"></script>
+    <script>
+        Validator({
+            form: '#formdangki',
+            errorSelector: '.text-danger',
+            rules: [
+                Validator.isRequired('#txtusername'),
+                Validator.isSDT('#txtsodienthoai', 'Vui lòng nhập lại số điện thoại'),
+                Validator.isPassw('#password', 'Vui lòng nhập lại tối thiểu 8 ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt'),
+                Validator.isRequired('#confirmpassword', 'Vui lòng nhập thông tin'),
+                Validator.isConfirmpassword('#confirmpassword', function () {
+                    return document.querySelector('#formdangki #password').value;
+                }, 'Mật khẩu nhập lại không đúng'),
+            ],
+            onSubmit: function (data) {
+                //call api
+                console.log(data);
+            }
+        })
+        ValidatorLogin({
+            form: '#formlogin',
+            errorSelector: '.text-danger',
+            rules: [
+                ValidatorLogin.isRequired('#txtusername', 'Vui lòng nhập tên đăng nhập'),
+                ValidatorLogin.isRequired('#password', 'Vui lòng nhập password'),
+            ],
+            onSubmit: function (data) {
+                //call api
+                console.log(data);
+            }
+        })
+    </script>
+    <script language="javascript">
+        // document.getElementById("iconclickmenu").onclick = function () {
+        //     var x = document.getElementById("click-hidden");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //     }
+        //     else {
+        //         x.style.display = "none";
+        //     }
+        // }
+    </script>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

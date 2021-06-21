@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Shoes</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/styleCategory.css">
+    <link rel="stylesheet" href="./css/styleLogin.css">
+    <link rel="stylesheet" href="./css/styleRegistration.css">
+    <link rel="stylesheet" href="./css/stylechitiet.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.14.0-web/css/all.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.zoom.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/zoom.js"></script>
+    <script src="./js/myjs.js"></script>
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <div class="container-fuild">
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png " width="100px">
+                <div class="logon-font">
+                    Chicken Shoes
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Tìm kiếm . . .">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">
+                        <a class="btn-search_link" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="header-right">
+                <ul class="list-header_right">
+                    <li class="header-cart">
+                        <a href="./cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+
+                    <li class="header-login " onclick="dangnhap()">
+                        <a href="#" data-toggle="" onclick="dangnhap()">
+                            <i onclick="dangnhap()" class="fas fa-user-alt"></i>
+                        </a>
+                        <!-- <ul class="dropdown-menu">
+                            <li onclick="dangnhap()"><a href="#">Đăng nhập</a></li>
+                            <li><a href="#">Đăng kí</a></li>
+                            <li><a href="#">Đăng xuất</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <!--Navbar menu-->
+        <nav>
+            <!--Nav Pc-->
+            <ul class="menu">
+                <li>
+                    <a href="./trangchu.html">TRANG CHỦ</a>
+                </li>
+                <li>
+                    <a href="./gioithieu.html">GIỚI THIỆU</a>
+                </li>
+                <li>
+                    <a href="./Category.html">SẢN PHẨM</a>
+                </li>
+                <li>
+                    <a href="./Category.html">PHỤ KIỆN</a>
+                </li>
+                <li>
+                    <a href="./sitemap.html">SITE MAP</a>
+                </li>
+            </ul>
+            <!--Nav mobile, tablet-->
+            <label for="nav_input" class="menu_btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" hidden class="nav_mlb" id="nav_input">
+            <label for="nav_input" class="nav_overlay"></label>
+            <div class="menu_mobile">
+                <label for="nav_input" class="menu_close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul class="menu_mobile_list">
+                    <li>
+                        <input class="menu_mobile_list-input" type="search" placeholder="Tìm kiếm">
+                        <span class="menu_mobile_list-input-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="./trangchu.html">TRANG CHỦ</a>
+                    </li>
+                    <li>
+                        <a href="./gioithieu.html">GIỚI THIỆU</a>
+                    </li>
+                    <li>
+                        <a href="./Category.html">SẢN PHẨM</a>
+                    </li>
+                    <li>
+                        <a href="./Category.html">PHỤ KIỆN</a>
+                    </li>
+                    <li>
+                        <a href="./sitemap.html">SITE MAP</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <div class="main">
+            <div class="product_details">
+                <div class="product_details-left">
+                    <img src="./img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White2.jpg"
+                        class="xzoom"
+                        xoriginal="./img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White1.jpg">
+
+                    <div class="xzoom-thumbar">
+                        <a href="./img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White1.jpg">
+                            <img class="xzoom-gallery"
+                                src="img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White1.jpg"
+                                xpreview="./img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White1.jpg"
+                                onclick="clickme(this)">
+                        </a>
+                        <a href="./img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White3.jpg">
+                            <img class="xzoom-gallery"
+                                src="img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White3.jpg"
+                                xpreview="./img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White3.jpg">
+                        </a>
+                        <a href="./img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White2.jpg">
+                            <img class="xzoom-gallery"
+                                src="img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White2.jpg"
+                                xpreview="./img/Addias/Addias-Superstar-Running-White/Addias-Superstar-Running-White2.jpg">
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="product_details-right">
+                    <h3>Adidas Superstar Running</h3>
+                    <span class="product_details-item-link"><a href="#"><i>Adidas</i></a></span>
+                    <ul class="rating">
+                        <li><i class="fas fa-star fa-sm text-primary"></i></li>
+                        <li><i class="fas fa-star fa-sm text-primary"></i></li>
+                        <li><i class="fas fa-star fa-sm text-primary"></i></li>
+                        <li><i class="fas fa-star fa-sm text-primary"></i></li>
+                        <li><i class="far fa-star fa-sm text-primary"></i></li>
+                    </ul>
+                    <span class="product_details-right-price">
+                        <strong>2.500.000 đ</strong>
+                    </span>
+                    <div class="delivery">
+                        <div class="delivery_ship-1">
+                            <i class="fas fa-check-square"></i>
+                            <span class="delivery_ship-item1">Phí giao hàng tiêu chuẩn toàn quốc +35.000đ(3-5
+                                ngày)</span>
+                            <br>
+                            <span class="delivery_ship-item2">Miễn phí giao hàng tiêu chuẩn cho đơn từ 599.000đ</span>
+                        </div>
+                        <div class="delivery_ship-2">
+                            <i class="fas fa-check-square"></i>
+                            <span class="delivery_ship-item1">Giao hàng siêu tốc khu vực nội thành HCM(2-3h, có tính
+                                phí)</span>
+                            <br>
+                            <span class="delivery_ship-item2">Bằng các dịch vụ giao hàng nhanh như grad, lalamove,... có
+                                tính thêm phí theo từng địa điểm. Liên hệ nhân viên tư vấn theo từng địa điểm</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="select_box">
+                        <div class="select_size-box">
+                            <span>
+                                <label for="product_select-size">Size</label>
+                            </span>
+                            <select class="product_select-size_option" data-option="option 1">
+                                <option value="1">36</option>
+                                <option value="2">37</option>
+                                <option value="3">38</option>
+                                <option value="4">39</option>
+                                <option value="5">40</option>
+                                <option value="6">41</option>
+                                <option value="7">42</option>
+                            </select>
+                        </div>
+                        <div class="select_quantum-box">
+                            <span>
+                                <label for="product_select-quantum">Số lượng</label>
+                            </span>
+                            <input type="number" class="product_select-quantum_option" value="1">
+                        </div>
+                    </div>
+                    <span class="color-shoes">
+                        <h6>Màu khác:</h6>
+                        <a href="#">
+                            <img src="./img/Addias/Adidas-Alphabounce-Beyond-Black/Adidas-Alphabounce-Beyond-Black1.jpg"
+                                alt="">
+                        </a>
+                    </span>
+                    <div class="select_buy">
+                        <button>
+                            <a class="a" href="./cart.html">Mua Ngay</a>
+                        </button>
+                        <button>
+                            <a class="a" href="./cart.html">Thêm vào
+                                <i class="fas fa-shopping-cart"></i></a>
+                        </button>
+                    </div>
+                    <div class="contact">
+                        <button class="contact_messager">
+                            CHAT VỚI NHÂN VIÊN
+                            <i class="fas fa-comment-dots"></i>
+                        </button>
+                        <button class="contac_address">
+                            <a href="./gioithieu.html">ĐỊA CHỈ LIÊN HỆ
+                                <i class="fas fa-map-marked-alt"></i></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="describe_product">
+                <h4><b>MÔ TẢ SẢN PHẨM</b></h4>
+                <h5>GIÀY SUPERSTAR</h5>
+                <h6><i>THIẾT KẾ CỔ THẤP ĐẶC TRƯNG VỚI MŨI GIÀY VỎ SÒ</i></h6>
+                <p>Thiết kế ban đầu dành cho sân bóng rổ vào thập niên 70.
+                    Được các ngôi sao hip hop tôn sùng vào thập niên 80. Đôi giày adidas Superstar giờ đây đã trở thành
+                    biểu tượng của các tín đồ thời trang đường phố.
+                    Thiết kế mũi giày vỏ sò nổi tiếng thế giới mang đến phong cách chất lừ và khả năng bảo vệ. Giống như
+                    những gì đôi giày này đã thể hiện trên sân bóng rổ trong quá khứ. Giờ đây, bạn có thể tự tin tham
+                    gia lễ hội âm nhạc hay dạo phố mà không sợ bị dẫm lên chân.
+                    Chi tiết 3 Sọc viền răng cưa và logo adidas Superstar đóng khung mang đậm phong cách nguyên bản
+                    chính hiệu.
+                </p>
+                <h5>THÔNG SỐ</h5>
+                <ul class="describe_product_2">
+                    <li>Mã sản phẩm:TD1235</li>
+                    <li>Có dây buộc</li>
+                    <li>Thân giày bằng da</li>
+                    <li>Màu sản phẩm: White/Black</li>
+                </ul>
+            </div>
+            <hr>
+            <h4>SẢN PHẨM TƯƠNG TỰ</h4>
+            <div class="pd_diff">
+                <div class="diff">
+                    <a href="./chitiet.html">
+                        <img src="img/Addias/Adidas-Ultra-Boost-4.0-Triple-Black/Adidas-Ultra-Boost-4.0-Triple-Black2-removebg-preview.png"
+                            alt="">
+                        <span>Adidas Ultra Boost 4.0 Triple Black</span> <br>
+                        <span class="price">1.250.000 đ</span></a>
+                </div>
+                <div class="diff">
+                    <a href="./chitiet.html">
+                        <img src="img/Converse/Converse-Chuck-Taylor-All-Star-Lift-Festival-570969C/Converse-Chuck-Taylor-All-Star-Lift-Festival-570969C1-removebg-preview.png"
+                            alt="">
+                        <span>Converse Chuck Taylor All-Star Lift Festival 570969C</span> <br>
+                        <span class="price">1.500.000 đ</span></a>
+                </div>
+                <div class="diff">
+                    <a href="./chitiet.html">
+                        <img src="img/Nike/Nike-Air-Force-1-Low-G-Dragon-Peaceminusone-Para-Noise-Yellow-Swoosh-(Limited)/Nike-Air-Force-1-Low-G-Dragon-Peaceminusone-Para-Noise-Yellow-Swoosh-2-removebg-preview.png"
+                            alt="">
+                        <span>Nike Air Force 1 Low G-Dragon Peaceminusone Para Noise Yellow Swoosh</span> <br>
+                        <span class="price">2.700.000 đ</span></a>
+                </div>
+                <div class="diff">
+                    <a href="./chitiet.html">
+                        <img src="img/Converse/Converse-Chuck-Taylor-All-Star-Lift-Canvas-560251C/Converse-Chuck-Taylor-All-Star-Lift-Canvas-560251C1-removebg-preview.png"
+                            alt="">
+                        <span>Converse Chuck Taylor All Star Lift Canvas 560251C</span> <br>
+                        <span class="price">1.050.000 đ</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <div class="footer-list_item">
+            <h5>GIỚI THIỆU</h5>
+            <hr>
+            <p>Chào mừng bạn đến với Chicken Shoes, nơi mang lại trải nghiệm tốt nhất cho bạn về các loại</p>
+        </div>
+        <div class="footer-list_item">
+            <h5>ĐỊA CHỈ</h5>
+            <hr>
+            <ul class="footer-menu_address">
+                <li>
+                    <a href="#" class="footer-list_item-link">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>12 Nguyễn Văn Bảo, phường 4, quân Gò Vấp, TP.HCM</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-list_item-link">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <p>01245656</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-list_item-link">
+                        <i class="far fa-envelope"></i>
+                        <p>lengocanhdao226@gmail.com</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-list_item" id="footer-list_item3">
+            <h5>LIÊN HỆ</h5>
+            <hr>
+            <p>19429101_Lê Ngọc Anh Đào</p>
+            <p>19429861_Tăng Công Tổng</p>
+        </div>
+    </div>
+    </div>
+    <!--Login form-->
+    <div class="login" id="dangnhap">
+        <div class="mangngoai" onclick="dangnhap()"
+            style="background-color: rgba(27, 27, 27, 0.308);; width: 100%;height: 100%;position: fixed;"></div>
+        <div class="loginform " style="position: fixed;">
+            <div class="row justify-content-center block-login" style="background-color: rgba(26, 25, 25, 0.829) ;">
+                <div class="loginform-header col-md-12  ">
+                    <div class="d-flex justify-content-center ">
+                        <h1 class="">Đăng nhập</h1>
+                        <img class="login-img-logo" src="./img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="loginform-body col-md-12 justify-content-center">
+                    <form action="" class="" id="formlogin">
+                        <div class="loginform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text icon-input">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <input type="text" class="form-control input-input" name="username" id="txtusername"
+                                    placeholder="Tên tài khoản">
+                            </div>
+                            <span class="text-danger" id="tbuser"></span>
+                        </div>
+                        <div class="loginform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text icon-input">
+                                    <i class="fas fa-key"></i>
+                                </span>
+                                <input type="password" class="form-control input-input" name="password" id="password"
+                                    placeholder="Mật khẩu">
+                            </div>
+                            <span class="text-danger" id="tbpassword"></span>
+                        </div>
+                        <div class="loginform-body-item form-group form-check nhoquenmatkhau">
+                            <input type="checkbox" class="form-check-input" id="remember-me">
+                            <label class="form-check-label remember" for="remember-me">Nhớ mật khẩu</label>
+                            <a class="quenmạkhau ">Quên mật khẩu</a>
+                        </div>
+                        <div class="buttonlogin d-flex justify-content-center col-sm-12">
+                            <button id="btndangnhap" class="btn-login  btn btn-primary btn-lg ">Login</button>
+                        </div>
+                        <div class="login-or d-flex justify-content-center">
+                            <div class="or">
+                                <h3>OR</h3>
+                            </div>
+                        </div>
+                        <div class="icon-login-or d-flex justify-content-center">
+                            <a href="http://" class="icon-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="http://" class="icon-google">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <div class="chuacomatkhau d-flex justify-content-center">
+                            <span class="">Chưa có tài khoản?</span>
+                            <p onclick="dangki()"> Click here</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- register -->
+    <div class="registration" id="dangki">
+        <div class="mangngoai" onclick="dangki()"
+            style="background-color: rgba(27, 27, 27, 0.308);; width: 100%;height: 100%;position: fixed;"></div>
+        <div class="registrationform " style="position: fixed;">
+            <div class="row justify-content-center block-registration"
+                style="background-color: rgba(26, 25, 25, 0.829) ;">
+                <div class="registrationform-header ">
+                    <div class="col-md-12  d-flex justify-content-center">
+                        <h1 class="">Đăng ký</h1>
+                        <img class="registration-img-logo" src="./img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="registrationform-body col-md-12 justify-content-center">
+                    <form action="" class="" id="formdangki">
+                        <div class="registrationform-body-item form-group">
+                            <div class="d-flex">
+                                <span class="input-group-text registrationform-icon-input">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </span>
+                                <input type="text" class=" form-control registrationform-input" name="sodienthoai"
+                                    id="txtsodienthoai" placeholder="Số điện thoại">
+                            </div>
+                            <span class="text-danger" id="tbsodienthoai"></span>
+                        </div>
+                        <div class="registrationform-body-item form-group  ">
+                            <div class="d-flex"> <span class="input-group-text registrationform-icon-input">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <input type="text" class="form-control registrationform-input" name="username"
+                                    id="txtusername" placeholder="Tên tài khoản">
+                            </div>
+                            <span class="text-danger" id="tbusername"></span>
+                        </div>
+                        <div class="registrationform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text registrationform-icon-input">
+                                    <i class="fas fa-key"></i>
+                                </span>
+                                <input type="password" class="form-control registrationform-input" name="password"
+                                    id="password" placeholder="Mật khẩu">
+                            </div>
+                            <span class="text-danger" id="tbpassword"></span>
+                        </div>
+                        <div class="registrationform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text registrationform-icon-input ">
+                                    <img class="confirm-password" src="./img/confirm-password.png" alt="">
+                                    </i>
+                                </span>
+                                <input type="password" class="form-control registrationform-input"
+                                    name="confirm-password" id="confirmpassword" placeholder="Xác thực mật khẩu ">
+                            </div>
+                            <span class="text-danger" id="tbconfirmpassword"></span>
+
+                        </div>
+                        <div class="buttonregistration d-flex justify-content-center col-sm-12">
+                            <button class="btn-registration  btn btn-primary btn-lg ">Submit</button>
+                        </div>
+                        <div class="registration-or d-flex justify-content-center">
+                            <div class="or">
+                                <h3>OR</h3>
+                            </div>
+                        </div>
+                        <div class="icon-registration-or d-flex justify-content-center">
+                            <a href="http://" class="icon-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="http://" class="icon-google">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <div class="dacotaikhoan d-flex justify-content-center">
+                            <span class="">Đã có tài khoản?</span>
+                            <p onclick="dangnhap()"> Click here</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/trangchu.js"></script>
+    <script>
+        Validator({
+            form: '#formdangki',
+            errorSelector: '.text-danger',
+            rules: [
+                Validator.isRequired('#txtusername'),
+                Validator.isSDT('#txtsodienthoai', 'Vui lòng nhập lại số điện thoại'),
+                Validator.isPassw('#password', 'Vui lòng nhập lại tối thiểu 8 ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt'),
+                Validator.isRequired('#confirmpassword', 'Vui lòng nhập thông tin'),
+                Validator.isConfirmpassword('#confirmpassword', function () {
+                    return document.querySelector('#formdangki #password').value;
+                }, 'Mật khẩu nhập lại không đúng'),
+            ],
+            onSubmit: function (data) {
+                //call api
+                console.log(data);
+            }
+        })
+        ValidatorLogin({
+            form: '#formlogin',
+            errorSelector: '.text-danger',
+            rules: [
+                ValidatorLogin.isRequired('#txtusername', 'Vui lòng nhập tên đăng nhập'),
+                ValidatorLogin.isRequired('#password', 'Vui lòng nhập password'),
+            ],
+            onSubmit: function (data) {
+                //call api
+                console.log(data);
+            }
+        })
+    </script>
+</body>
+
+</head>
+
+</html>

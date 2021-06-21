@@ -1,0 +1,447 @@
+html {
+    margin    : 0px;
+    padding   : 0px;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+header {
+    background     : #000;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 0 4.4%;
+    margin         : 0 auto;
+    height         : 100px;
+    width          : 100%;
+    position       : fixed;
+    z-index        : 2;
+}
+
+.logo {
+    display    : flex;
+    align-items: center;
+    position   : relative;
+    width      : 200px;
+    flex-flow  : column;
+}
+
+.logon-font {
+    padding    : 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size  : 25px;
+    font-weight: 600;
+    color      : #fff;
+}
+
+.input-group {
+    position: absolute;
+    left    : calc(100% - 65.2%);
+    margin  : 0px;
+    width   : calc(100% - 68%);
+}
+
+.btn-success {
+    background: rgb(255, 195, 18);
+
+}
+
+.btn-success a {
+    color: #000;
+}
+
+.btn-success:hover {
+    background-color: rgb(255, 125, 4);
+}
+
+.btn-success a:hover {
+    color: #fff;
+}
+
+.btn-search_link {
+    color: #fff;
+}
+
+.header-right {
+    display    : flex;
+    align-items: center;
+
+}
+
+.list-header_right {
+    list-style     : none;
+    text-decoration: none;
+    font-size      : 20px;
+    display        : inline-flex;
+    margin         : 0;
+    padding        : 0;
+}
+
+.list-header_right li {
+    margin: 0 10px;
+}
+
+.header-cart {
+    font-size    : 25px;
+    background   : rgb(255, 195, 18);
+    width        : 40px;
+    height       : 39px;
+    text-align   : center;
+    padding      : 0 5px;
+    border-radius: 2px;
+}
+
+.header-cart a {
+    color: #000;
+}
+
+.header-cart:hover {
+    background: rgb(255, 125, 4);
+}
+
+.header-login {
+    font-size    : 25px;
+    background   : rgb(255, 195, 18);
+    width        : 40px;
+    height       : 39px;
+    text-align   : center;
+    padding      : 0 5px;
+    border-radius: 2px;
+    position     : relative;
+    left         : -15px;
+}
+
+.header-login a {
+    color: #fff;
+}
+
+.header-login:hover {
+    background: rgb(255, 125, 4);
+}
+
+nav {
+    background: rgb(57, 58, 68);
+    width     : 100%;
+    position  : fixed;
+    top       : 100px;
+    z-index   : 2;
+}
+
+.menu {
+    height         : 60px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin         : 0;
+}
+
+.menu>li {
+    list-style : none;
+    display    : inline-flex;
+    padding    : 0 1rem;
+    align-items: center;
+}
+
+.menu li:hover a {
+    border-bottom: 3px solid rgb(255, 195, 18);
+    color        : rgb(255, 195, 18);
+    padding      : 16px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size      : 16px;
+    font-family    : Arial, Helvetica, sans-serif;
+    font-weight    : 600;
+    color          : #fff;
+}
+
+.main {
+    padding  : 30px 0;
+    margin   : 0 auto;
+    max-width: calc(100% - 10.5%);
+    position : relative;
+    top      : 148px;
+    margin-bottom: 40px;
+}
+.header-link{
+    margin-bottom: 30px;
+}
+.steps-cart-checkout-complete {
+    list-style         : none;
+    /* background-color: aqua; */
+    margin-left        : 0;
+    margin-right       : 0;
+    padding-left       : 0;
+    padding-right      : 0;
+}
+
+.steps-cart-checkout-complete li {
+    display    : inline-block;
+    font-weight: bold;
+    font-size  : 30px;
+    line-height: 1.2;
+}
+
+.steps-cart-checkout-complete li a {
+    text-decoration: none;
+    color          : rgba(102, 102, 102, 0.767);
+    margin         : 0 20px;
+}
+
+.steps-cart-checkout-complete li i {
+    color    : rgba(102, 102, 102, 0.767);
+    font-size: 1.85rem;
+}
+
+.steps-cart-checkout-complete .step-checkout a {
+    color: #000;
+}
+
+.step-cart a:hover {
+    color: #000;
+}
+.cart-totals-inner{
+    background-color: rgb(221, 218, 218);
+
+}
+.needs-validation{
+    background-color: #fff;
+    /* padding: 10px; */
+}
+.cart-totals-inner{
+    padding: 20px;
+    border: 3px solid #EFEFEF;
+    /* margin-left: 10px; */
+}
+.cart-totals-inner h2{
+    margin-bottom: 5px;
+    /* padding-left: 6px; */
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.thanhtoanvagiaohang {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.cart-totals-inner table{
+    margin-bottom: 10px;
+    width: 100%;
+}
+table thead th {
+    border-bottom: 2px solid #E6E6E6;
+    padding      : 15px 12px;}
+table tr td{
+    border-bottom: 1px solid #E6E6E6;
+    padding      : 15px 12px;
+}
+
+th.title-right {
+    text-align: right;
+    width: 25%;
+}
+td.price-product {
+    text-align: right;
+}
+.name-and-quantity-product{
+justify-content: space-between;
+display: flex;
+}
+.name-product{
+    display: flex;
+    text-align: left;
+    width: 85%;
+}
+.quantity-product{
+    display: flex;
+    /* width: 15%; */
+    text-align: center;
+}
+
+
+
+
+.cart-totals-inner table td ul {
+    list-style  : none;
+    padding-left: 0px;
+    margin      : 0;
+}
+
+.cart-totals-inner table td ul li {
+    margin-bottom: 5px;
+    width: 90%;
+    display      : flex;
+}
+
+.cart-totals-inner table td ul li div {
+    position: absolute;
+    right   : 0;
+    margin-right: 25px;
+}
+
+.cart-totals-inner table td ul li label {
+    text-align: left;
+}
+
+.chuthichgiaohang {
+    color     : rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    /* bottom : 0; */
+}
+
+.cart-totals-inner table td ul .li-chuthichgiaohang {
+    margin-bottom: 0px;
+}
+
+td.th-giaohang {
+    width: 25%;
+    font-weight: bolder;
+}
+td.th-thanhtoan{
+    width: 25%;
+    font-weight: bolder;
+}
+
+
+.cart-totals-inner table .tong {
+    font-weight   : bold;
+    font-size     : 22px;
+    padding-bottom: 0;
+    color         : rgb(255, 18, 18);
+    /* color      : rgb(255, 195, 18); */
+    border        : 0;
+
+}
+
+.cart-totals-inner table .money {
+    font-size     : 22px;
+    text-align    : right;
+    font-weight   : bold;
+    padding-bottom: 0;
+    color         : rgb(255, 18, 18);
+    border        : 0;
+}
+
+
+.tienhanhthanhtoan {
+    display        : flex;
+    justify-content: center;
+}
+
+.tienhanhthanhtoan button {
+    padding: 4px 175px;
+    font-size       : 22px;
+    font-weight     : bold;
+    background-color: #000;
+    color           : #fff;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+.footer {
+    position       : relative;
+    top            : 120PX;
+    display        : flex;
+    justify-content: center;
+    background     : #000;
+    color          : #fff;
+}
+
+.footer-list_item {
+    width    : 26.2%;
+    margin   : 0 20px;
+    display  : flex;
+    flex-flow: column;
+}
+
+.footer-list_item hr {
+    width           : 35%;
+    height          : 3 px;
+    background-color: rgb(255, 191, 0);
+    opacity         : 10;
+}
+
+.footer-list_item h5 {
+    position: relative;
+    top     : 4%;
+}
+
+
+.footer-menu_address li {
+    list-style: none;
+}
+
+.footer-list_item-link {
+    display        : inline-flex;
+    align-items    : center;
+    text-decoration: none;
+    color          : #fff;
+    padding        : 5px;
+}
+
+.footer-list_item-link i {
+    font-size: 30px;
+    position : relative;
+    top      : -10px;
+}
+
+.overlay {
+    display         : none;
+    position        : absolute;
+    top             : 0;
+    height          : 100vh;
+    width           : 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width:46.25em) and (max-width:63.9375em){
+    .steps-cart-checkout-complete li{
+        font-size: 20px;
+    }
+    .tienhanhthanhtoan button {
+        padding: 8px 21px;
+        background-color: #000;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width:46.1875em){
+    .steps-cart-checkout-complete li{
+        font-size: 15px;
+    }
+    .steps-cart-checkout-complete li i {
+        color: rgba(102, 102, 102, 0.767);
+        font-size: 1.85rem;
+    }
+    .tienhanhthanhtoan button {
+        padding: 8px 21px;
+        background-color: #000;
+        color: #fff;
+    }
+    .thanhtoanvagiaohang {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .header-link {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    table tr td {
+        border-bottom: 1px solid #E6E6E6;
+        padding: 5px;
+    }
+}

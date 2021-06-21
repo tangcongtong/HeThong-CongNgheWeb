@@ -1,0 +1,327 @@
+.xzoom{
+    width: 100%;
+    box-shadow:  0px 0px 5px 5px rgba(139, 139, 139, 0.178);
+    border-radius: 2px;
+}
+.xzoom-thumbar {
+    display: flex;
+    width: 100%;
+}
+.xzoom-gallery{
+    width: 100%;
+    padding: 0.2rem;
+}
+.product_details{
+    display: flex;
+    height: 100%;
+}
+.rating{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.rating li i{
+    display: inline;
+    list-style: none;
+}
+.rating li{
+    margin: 0 0.1rem;
+    list-style: none;
+}
+.product_details{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-flow: row;
+}
+.product_details-item-link a{
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+    font-style: bold;
+}
+.product_details-item-link a:hover{
+    background: rgba(139, 139, 139, 0.144);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.product_details-left{
+    max-width: 50%;
+}
+.product_details-right{
+    line-height: 2rem;
+    padding: 0;
+    max-width: 50%;
+    margin-left: 2%;
+}
+.product_details-right-price{
+    color: crimson;
+    font-size: 1.5rem;
+}
+.delivery{
+    display: flex;
+    flex-flow: column;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.delivery i{
+    color: rgb(255, 195, 18);
+}
+.delivery_ship-item2 {
+    color: rgba(8, 8, 8, 0.404);
+    position: relative;
+    left: 1.1rem;
+    font-weight: normal;
+}
+.select_box{
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+
+.product_select-size_option,
+.product_select-quantum_option {
+    width: 60px;
+    height: 40px;
+    padding: 0.5rem;
+    background: rgba(139, 139, 139, 0.178);
+    border: 0;
+}
+.select_quantum-box{
+    margin-left: 1rem;
+}
+.color-shoes{
+    position:relative;
+    top: 1.5rem;
+}
+.color-shoes img{
+    width: 6rem;
+    position:relative;
+}
+.select_buy button{
+    border: 0;
+    border-radius: 2px;
+    padding: 0.3rem;
+    background: rgb(255, 195, 18);
+    text-align: center;
+    width: 24%;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    top: 3rem;
+}
+
+.select_buy button:hover{
+    background: rgb(243, 181, 87);
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+}
+.contact button{
+    border: 0;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    top: 4rem;
+}
+.contact_messager{
+    background: rgb(4,152,246);
+    color: #fff;
+}
+.contac_address{
+    margin-left: 1rem;
+}
+.contac_address a{
+    color: #000;
+    text-decoration: none;
+}
+.menu>li {
+    list-style: none;
+    display   : inline-flex;
+    padding   : 0 1rem;
+    align-items: center;
+}
+.menu li:hover a {
+    border-bottom: 3px solid rgb(255, 195, 18);
+    color        : rgb(255, 195, 18);
+    padding: 16px 0;
+}
+.describe_product{
+    line-height: 2rem;
+    font-size: 20px;
+    margin-top: 30px;
+    border-top: 2px solid rgba(0, 0, 0, 0.205);
+    padding-top: 10px;
+}
+.describe_product h5{
+    font-weight: bold;
+}
+.describe_product h6{
+    font-weight: bold;
+}
+.pd_diff{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.pd_diff a{
+    color: #000;
+    text-decoration: none;
+}
+.diff{
+    width: 22%;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+}
+.diff:hover{
+    border: 1px solid rgb(255, 195, 18);
+}
+.diff img{
+    width: 100%;
+    margin: 0;
+}
+.diff span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.price{
+    color: rgb(224, 63, 63);
+}
+.footer-list_item hr {
+    width           : 100%;
+    height          : 3 px;
+    background-color: rgb(255, 191, 0);
+    opacity         : 1;
+}
+@media only screen and (min-width:46.25em) and (max-width:63.9375em){
+    .menu{
+        display: none;
+    }
+    .product_details{
+        display: flex;
+        width: 100%;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .product_details-left{
+        max-width: 100%;
+    }
+    .product_details-right{
+        line-height: 2rem;
+        padding: 0;
+        max-width: 100%;
+    }
+    .delivery{
+        display: flex;
+        flex-flow: column;
+        line-height: 1.6rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .describe_product {
+        line-height: 2rem;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width:46.1875em){
+    .product_details-right h3{
+        font-size: 25px;
+    }
+    .menu{
+        display: none;
+    }
+    .product_details{
+        display: flex;
+        width: 100%;
+        padding: 0;
+        flex-wrap: wrap;
+        margin-bottom: 10%;
+    }
+    .product_details-left{
+        max-width: 100%;
+    }
+    .product_details-right{
+        line-height: 2rem;
+        padding: 0;
+        max-width: 100%;
+    }
+    .delivery{
+        display: flex;
+        flex-flow: column;
+        line-height: 1.6rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .delivery_ship-item2 {
+        color: rgba(8, 8, 8, 0.404);
+        position: relative;
+        left: 0; 
+        font-weight: normal;
+    }
+    .select_buy{
+        display: flex;
+        justify-content: space-between;
+    }
+    .select_buy button{
+        width: 48%;
+
+    }
+    button .a{
+        text-decoration: none;
+        color: #000;
+
+    }
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+    }
+    .contact button{
+        width: 48%;
+        margin-bottom: 55px;
+        line-height: 1.5rem;
+    }
+    .contac_address{
+        margin: 0;
+    }
+    .contact_messager i{
+        display: none;
+    }
+    .contac_address i{
+        display: none;
+    }
+    .diff{
+        width: 100%;
+        margin: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.123);
+    }
+    .footer {
+        position: relative;
+        top: 120px;
+        background: #000;
+        color: #fff;
+    }
+    .footer-list_item {
+        width    : 100%;
+        display  : flex;
+        flex-flow: column;
+    }
+    .footer-list_item hr{
+        margin: 8px 0 ;
+    }
+}
+
+

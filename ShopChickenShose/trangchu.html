@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/styleRegistration.css">
+    <link rel="stylesheet" href="./css/styleLogin.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.14.0-web/css/all.min.css">
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div class="container-fuild">
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png " width="100px">
+                <div class="logon-font">
+                    Chicken Shoes
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Tìm kiếm . . .">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">
+                        <a class="btn-search_link" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="header-right">
+                <ul class="list-header_right">
+                    <li class="header-cart">
+                        <a href="./cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="header-login " onclick="dangnhap()">
+                        <a href="#" data-toggle="" onclick="dangnhap()">
+                            <i onclick="dangnhap()" class="fas fa-user-alt"></i>
+                        </a>
+                        <!-- <ul class="dropdown-menu">
+                            <li onclick="dangnhap()"><a href="#">Đăng nhập</a></li>
+                            <li><a href="#">Đăng kí</a></li>
+                            <li><a href="#">Đăng xuất</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div>
+        </header>
+        
+        <!--Navbar menu-->
+        <nav>
+            <!--Nav Pc-->
+            <ul class="menu">
+                <li>
+                    <a href="./trangchu.html">TRANG CHỦ</a>
+                </li>
+                <li>
+                    <a href="./gioithieu.html">GIỚI THIỆU</a>
+                </li>
+                <li>
+                    <a href="./Category.html">SẢN PHẨM</a>
+                </li>
+                <li>
+                    <a href="./Category.html">PHỤ KIỆN</a>
+                </li>
+                <li>
+                    <a href="./sitemap.html">SITE MAP</a>
+                </li>
+            </ul>
+            <!--Nav mobile, tablet-->
+            <label for="nav_input" class="menu_btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" hidden class="nav_mlb" id="nav_input">
+            <label for="nav_input" class="nav_overlay"></label>
+            <div class="menu_mobile">
+                <label for="nav_input" class="menu_close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul class="menu_mobile_list">
+                    <li>
+                        <input class="menu_mobile_list-input" type="search" placeholder="Tìm kiếm">
+                        <span class="menu_mobile_list-input-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="./trangchu.html">TRANG CHỦ</a>
+                    </li>
+                    <li>
+                        <a href="./gioithieu.html">GIỚI THIỆU</a>
+                    </li>
+                    <li>
+                        <a href="./Category.html">SẢN PHẨM</a>
+                    </li>
+                    <li>
+                        <a href="./Category.html">PHỤ KIỆN</a>
+                    </li>
+                    <li>
+                        <a href="./sitemap.html">SITE MAP</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <div class="main">
+            <div id="img" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#img" data-slide-to="0" class="active"></li>
+                    <li data-target="#img" data-slide-to="1"></li>
+                    <li data-target="#img" data-slide-to="2"></li>
+                    <li data-target="#img" data-slide-to="3"></li>
+                </ol>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/banner1.jpg" alt="slide1" class="d-block w-100" height="50%">
+                        <div class="carousel-btn d-none d-md-block">
+                            <button>
+                                <a href="./Category.html">SHOP NOW!</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner2.jpg" alt="slide2" class="d-block w-100" height="50%">
+                        <div class="carousel-btn d-none d-md-block">
+                            <button>
+                                <a href="./Category.html">SHOP NOW!</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner3.jpg" alt="slide2" class="d-block w-100" height="50%">
+                        <div class="carousel-btn d-none d-md-block">
+                            <button>
+                                <a href="./Category.html">SHOP NOW!</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner4.jpg" alt="slide2" class="d-block w-100" height="50%">
+                        <div class="carousel-btn d-none d-md-block">
+                            <button>
+                                <a href="./Category.html">SHOP NOW!</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#img" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#img" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="topic-shoes">
+                <div class="topic-shoes_item">
+                    <img src="./img/Addias/logo.png" alt="1">
+                    <button class="topic-shoes_item-btn">
+                        <a href="./Category.html">Xem sản phẩm</a>
+                    </button>
+                </div>
+                <div class="topic-shoes_item">
+                    <img src="./img/Converse/converselogo.jpg"
+                        alt="2">
+                    <button class="topic-shoes_item-btn">
+                        <a href="./Category.html">Xem sản phẩm</a>
+                    </button>
+                </div>
+                <div class="topic-shoes_item">
+                    <img src="./img/Nike/nkie-logo.jpg" alt="">
+                    <button class="topic-shoes_item-btn">
+                        <a href="./Category.html">Xem sản phẩm</a>
+                    </button>
+                </div>
+            </div>
+            <div class="newsshoes-container">
+                <div class="newsshoes-header">
+                    <p>SẢN PHẨM MỚI</p>
+                </div>
+                <ul class="newsshoes-list">
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Addias/Adidas-Ultra-Boost-4.0-Triple-Black/Adidas-Ultra-Boost-4.0-Triple-Black2-removebg-preview.png"
+                                alt="">
+                            <div class="newsshoes-list_sales">
+                                <h6>Adidas Ultra Boost 4.0 Triple Black</h6>
+                                <p>1.250.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Converse/Converse-Chuck-Taylor-All-Star-Lift-Festival-570969C/Converse-Chuck-Taylor-All-Star-Lift-Festival-570969C1-removebg-preview.png"
+                                alt="">
+                            <div class="newsshoes-list_sales">
+                                <h6>Converse Chuck Taylor All-Star Lift Festival 570969C</h6>
+                                <p>1.500.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Nike/Nike-Air-Force-1-Low-G-Dragon-Peaceminusone-Para-Noise-Yellow-Swoosh-(Limited)/Nike-Air-Force-1-Low-G-Dragon-Peaceminusone-Para-Noise-Yellow-Swoosh-2-removebg-preview.png"
+                                alt="">
+                            <div class="newsshoes-list_sales">
+                                <h6>Nike Air Force 1 Low G-Dragon Peaceminusone Para Noise Yellow Swoosh</h6>
+                                <p>2.700.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Nike/Nike-Air-More-Uptempo-GS-Dark-Stucco/Nike-Air-More-Uptempo-GS-Dark-Stucco2-removebg-preview.png"
+                                alt="">
+                            <div class="newsshoes-list_sales">
+                                <h6>Nike Air More Uptempo GS-Dark Stucco</h6>
+                                <p>2.150.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Converse/Converse-Chuck-Taylor-All-Star-Lift-Canvas-560251C/Converse-Chuck-Taylor-All-Star-Lift-Canvas-560251C1-removebg-preview.png"
+                                alt="">
+                            <div class="newsshoes-list_sales">
+                                <h6>Converse Chuck Taylor All Star Lift Canvas 560251C</h6>
+                                <p>1.050.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Converse/Converse-Chuck-Taylor-All-Star-Platform-Valentine'sDay-571119C/Converse-Chuck-Taylor-All-Star-Platform-Valentine_sDay-571119C1-removebg-preview.png"
+                                alt="">
+                            <div class="newsshoes-list_sales">
+                                <h6>Converse Chuck Taylor All Star Platform Valentine'sDay 571119C</h6>
+                                <p>4.999.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="popularshoes-container">
+                <div class="popularshoes-header">
+                    <p>SẢN PHẨM PHỔ BIẾN</p>
+                </div>
+                <ul class="popularshoes-list">
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Addias/Adidas-Alphabounce-Instinct-Core-Black-Silver-Metallic/Adidas-Alphabounce-Instinct-Core-Black-Silver-Metallic2-removebg-preview.png" alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Adidas Alphabounce Instinct Core Black Silver Metallic</h6>
+                                <p>1.600.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Addias/Yeezy-Boost-350-V2-Clay/Yeezy-Boost-350-V2-Clay1-removebg-preview.png"
+                                alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Yeezy Boost 350 V2 Clay</h6>
+                                <p>1.550.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Converse/Converse-Chuck -Taylor-All-Star-Lift-Canvas-560845C/Converse-Chuck_-Taylor-All-Star-Lift-Canvas-560845C1-removebg-preview.png"
+                                alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Converse Chuck Taylor All Star Lift Canvas 560845C</h6>
+                                <p>999.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="./img/Nike/Nike-Air-More-Uptempo-GS-Dark-Stucco/Nike-Air-More-Uptempo-GS-Dark-Stucco2-removebg-preview.png"
+                                alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Nike Air More Uptempo GS Dark Stucco</h6>
+                                <p>2.150.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Nike/Nike-Air-Jordan-4-Retro-OG-Bred-2019/Nike-Air-Jordan-4-Retro-OG-Bred-2019-2-removebg-preview.png"
+                                alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Nike Air Jordan 4 Retro OG Bred 2019</h6>
+                                <p>2.150.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="otherproductsshoes-container">
+                <div class="otherproductsshoes-header">
+                    <p>SẢN PHẨM KHÁC</p>
+                </div>
+                <ul class="otherproductsshoes-list">
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="./img/Nike/Nike-Air-More-Uptempo-GS-Dark-Stucco/Nike-Air-More-Uptempo-GS-Dark-Stucco2-removebg-preview.png"
+                                alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Nike Air More Uptempo GS Dark Stucco</h6>
+                                <p>2.150.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Addias/Yeezy-Boost-350-V2-Clay/Yeezy-Boost-350-V2-Clay1-removebg-preview.png"
+                                alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Yeezy Boost 350 V2 Clay</h6>
+                                <p>1.550.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Nike/Nike-Air-Jordan-4-Retro-OG-Bred-2019/Nike-Air-Jordan-4-Retro-OG-Bred-2019-2-removebg-preview.png"
+                                alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Nike Air Jordan 4 Retro OG Bred 2019</h6>
+                                <p>2.150.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Addias/Yeezy-Boost-350-V2-Clay/Yeezy-Boost-350-V2-Clay1-removebg-preview.png"
+                                alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Yeezy Boost 350 V2 Clay</h6>
+                                <p>1.550.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Nike/Nike-Air-Jordan-4-Retro-OG-Bred-2019/Nike-Air-Jordan-4-Retro-OG-Bred-2019-2-removebg-preview.png"
+                                alt="">
+                            <div class="popularshoes-list_sales">
+                                <h6>Nike Air Jordan 4 Retro OG Bred 2019</h6>
+                                <p>2.150.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                   <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Converse/Converse-Chuck-Taylor-All-Star-Platform-Valentine'sDay-571119C/Converse-Chuck-Taylor-All-Star-Platform-Valentine_sDay-571119C1-removebg-preview.png"
+                                alt="">
+                            <div class="newsshoes-list_sales">
+                                <h6>Converse Chuck Taylor All Star Platform Valentine'sDay 571119C</h6>
+                                <p>4.999.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Converse/Converse-Chuck-Taylor-All-Star-Platform-Valentine'sDay-571119C/Converse-Chuck-Taylor-All-Star-Platform-Valentine_sDay-571119C1-removebg-preview.png"
+                                alt="">
+                            <div class="newsshoes-list_sales">
+                                <h6>Converse Chuck Taylor All Star Platform Valentine'sDay 571119C</h6>
+                                <p>4.999.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./chitiet.html">
+                            <img src="img/Nike/Nike-Air-Force-1-Low-G-Dragon-Peaceminusone-Para-Noise-Yellow-Swoosh-(Limited)/Nike-Air-Force-1-Low-G-Dragon-Peaceminusone-Para-Noise-Yellow-Swoosh-2-removebg-preview.png"
+                                alt="">
+                            <div class="newsshoes-list_sales">
+                                <h6>Nike Air Force 1 Low G-Dragon Peaceminusone Para Noise Yellow Swoosh</h6>
+                                <p>2.700.000 đ</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-list_item">
+                <h5>GIỚI THIỆU</h5>
+                <hr>
+                <p>Chào mừng bạn đến với Chicken Shoes, nơi mang lại trải nghiệm tốt nhất cho bạn về các loại</p>
+            </div>
+            <div class="footer-list_item">
+                <h5>ĐỊA CHỈ</h5>
+                <hr>
+                <ul class="footer-menu_address">
+                    <li>
+                        <a href="#" class="footer-list_item-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>12 Nguyễn Văn Bảo, phường 4, quân Gò Vấp, TP.HCM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-list_item-link">
+                            <i class="fas fa-phone-square-alt"></i>
+                            <p>01245656</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-list_item-link">
+                            <i class="far fa-envelope"></i>
+                            <p>lengocanhdao226@gmail.com</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list_item" id="footer-list_item3">
+                <h5>LIÊN HỆ</h5>
+                <hr>
+                <p>19429101_Lê Ngọc Anh Đào</p>
+                <p>19429861_Tăng Công Tổng</p>
+            </div>
+        </div>
+    </div>
+    <!--Login form-->
+    <div class="login" id="dangnhap">
+        <div class="mangngoai" onclick="dangnhap()"
+            style="background-color: rgba(27, 27, 27, 0.308);; width: 100%;height: 100%;position: fixed;"></div>
+        <div class="loginform " style="position: fixed;">
+            <div class="row justify-content-center block-login" style="background-color: rgba(26, 25, 25, 0.829) ;">
+                <div class="loginform-header col-md-12  ">
+                    <div class="d-flex justify-content-center ">
+                        <h1 class="">Đăng nhập</h1>
+                        <img class="login-img-logo" src="./img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="loginform-body col-md-12 justify-content-center">
+                    <form action="" class="" id="formlogin">
+                        <div class="loginform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text icon-input">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <input type="text" class="form-control input-input" name="username" id="txtusername"
+                                    placeholder="Tên tài khoản">
+                            </div>
+                            <span class="text-danger" id="tbuser"></span>
+                        </div>
+                        <div class="loginform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text icon-input">
+                                    <i class="fas fa-key"></i>
+                                </span>
+                                <input type="password" class="form-control input-input" name="password" id="password"
+                                    placeholder="Mật khẩu">
+                            </div>
+                            <span class="text-danger" id="tbpassword"></span>
+                        </div>
+                        <div class="loginform-body-item form-group form-check nhoquenmatkhau">
+                            <input type="checkbox" class="form-check-input" id="remember-me">
+                            <label class="form-check-label remember" for="remember-me">Nhớ mật khẩu</label>
+                            <a class="quenmạkhau ">Quên mật khẩu</a>
+                        </div>
+                        <div class="buttonlogin d-flex justify-content-center col-sm-12">
+                            <button id="btndangnhap" class="btn-login  btn btn-primary btn-lg ">Login</button>
+                        </div>
+                        <div class="login-or d-flex justify-content-center">
+                            <div class="or">
+                                <h3>OR</h3>
+                            </div>
+                        </div>
+                        <div class="icon-login-or d-flex justify-content-center">
+                            <a href="http://" class="icon-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="http://" class="icon-google">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <div class="chuacomatkhau d-flex justify-content-center">
+                            <span class="">Chưa có tài khoản?</span>
+                            <p onclick="dangki()"> Click here</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- register -->
+    <div class="registration" id="dangki">
+        <div class="mangngoai" onclick="dangki()"
+            style="background-color: rgba(27, 27, 27, 0.308);; width: 100%;height: 100%;position: fixed;"></div>
+        <div class="registrationform " style="position: fixed;">
+            <div class="row justify-content-center block-registration"
+                style="background-color: rgba(26, 25, 25, 0.829) ;">
+                <div class="registrationform-header ">
+                    <div class="col-md-12  d-flex justify-content-center">
+                        <h1 class="">Đăng ký</h1>
+                        <img class="registration-img-logo" src="./img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="registrationform-body col-md-12 justify-content-center">
+                    <form action="" class="" id="formdangki">
+                        <div class="registrationform-body-item form-group">
+                            <div class="d-flex">
+                                <span class="input-group-text registrationform-icon-input">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </span>
+                                <input type="text" class=" form-control registrationform-input" name="sodienthoai"
+                                    id="txtsodienthoai" placeholder="Số điện thoại">
+                            </div>
+                            <span class="text-danger" id="tbsodienthoai"></span>
+                        </div>
+                        <div class="registrationform-body-item form-group  ">
+                            <div class="d-flex"> <span class="input-group-text registrationform-icon-input">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <input type="text" class="form-control registrationform-input" name="username"
+                                    id="txtusername" placeholder="Tên tài khoản">
+                            </div>
+                            <span class="text-danger" id="tbusername"></span>
+                        </div>
+                        <div class="registrationform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text registrationform-icon-input">
+                                    <i class="fas fa-key"></i>
+                                </span>
+                                <input type="password" class="form-control registrationform-input" name="password"
+                                    id="password" placeholder="Mật khẩu">
+                            </div>
+                            <span class="text-danger" id="tbpassword"></span>
+                        </div>
+                        <div class="registrationform-body-item form-group  ">
+                            <div class="d-flex">
+                                <span class="input-group-text registrationform-icon-input ">
+                                    <img class="confirm-password" src="./img/confirm-password.png" alt="">
+                                    </i>
+                                </span>
+                                <input type="password" class="form-control registrationform-input"
+                                    name="confirm-password" id="confirmpassword" placeholder="Xác thực mật khẩu ">
+                            </div>
+                            <span class="text-danger" id="tbconfirmpassword"></span>
+
+                        </div>
+                        <div class="buttonregistration d-flex justify-content-center col-sm-12">
+                            <button class="btn-registration  btn btn-primary btn-lg ">Submit</button>
+                        </div>
+                        <div class="registration-or d-flex justify-content-center">
+                            <div class="or">
+                                <h3>OR</h3>
+                            </div>
+
+                        </div>
+                        <div class="icon-registration-or d-flex justify-content-center">
+                            <a href="http://" class="icon-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="http://" class="icon-google">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <div class="dacotaikhoan d-flex justify-content-center">
+                            <span class="">Đã có tài khoản?</span>
+                            <p onclick="dangnhap()"> Click here</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/trangchu.js"></script>
+    <script>
+        Validator({
+            form: '#formdangki',
+            errorSelector: '.text-danger',
+            rules: [
+                Validator.isRequired('#txtusername'),
+                Validator.isSDT('#txtsodienthoai', 'Vui lòng nhập lại số điện thoại'),
+                Validator.isPassw('#password', 'Vui lòng nhập lại tối thiểu 8 ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt'),
+                Validator.isRequired('#confirmpassword', 'Vui lòng nhập thông tin'),
+                Validator.isConfirmpassword('#confirmpassword', function () {
+                    return document.querySelector('#formdangki #password').value;
+                }, 'Mật khẩu nhập lại không đúng'),
+            ],
+            onSubmit: function (data) {
+                //call api
+                console.log(data);
+            }
+        })
+        ValidatorLogin({
+            form: '#formlogin',
+            errorSelector: '.text-danger',
+            rules: [
+                ValidatorLogin.isRequired('#txtusername', 'Vui lòng nhập tên đăng nhập'),
+                ValidatorLogin.isRequired('#password', 'Vui lòng nhập password'),
+            ],
+            onSubmit: function (data) {
+                //call api
+                console.log(data);
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+
+</html>

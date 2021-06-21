@@ -1,0 +1,72 @@
+html {
+    margin    : 0px;
+    padding   : 0px;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 0;
+}
+.main {
+    padding : 42px 50px;
+    margin  : 0 auto;
+    max-width   : calc(100% - 20%);
+    background: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+.left{
+    width: 40%;
+}
+.right{
+    width: 40%;
+}
+.form-group label{
+    margin: 0.5rem 0;
+}
+.hr{
+    background: rgb(39, 39, 39);
+    width: 1px;
+}
+
+@media only screen and (min-width:46.25em) and (max-width:63.9375em)
+{
+    .main{
+        height: 100vh;
+    }
+    .hr{
+        display: none;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:46.1875em){
+    .main{
+        height: 100%;
+    }
+    .hr{
+        display: none;
+    }
+    .left{
+        width: 100%;
+    }
+    .left h3{
+        font-size: 20px;
+    }
+    .right{
+        width: 100%;
+    }
+    .right h3{
+        font-size: 20px;
+    }
+    .footer{
+        position: relative;
+        top: 120px;
+    }
+}

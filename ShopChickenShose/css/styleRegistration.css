@@ -1,0 +1,836 @@
+
+@media screen and (min-width:1200px) {
+
+    .registration {
+        width           : 100%;
+        height          : 100%;
+        display         : none;
+        justify-content : center;
+        align-items     : center;
+        position        : absolute;
+        top             : 0;
+        z-index         : 7;
+        /* background-color: rgba(27, 27, 27, 0.308); */
+    }
+    
+    .registrationform {
+        width    : 30%;
+        min-width: auto;
+        /* height   : 100%; */
+        position        : absolute;
+        display         : block;
+        /* background-color: rgba(26, 25, 25, 0.829); */
+        padding         : 20px;
+        z-index         : 1;
+    }
+
+    .registrationform-header {
+        height: 100px;
+    }
+
+    .registrationform-header div h1 {
+        color      : white;
+        line-height: 100px;
+        font-size  : 45px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .registrationform-header div .registration-img-logo {
+        width: 80px;
+        height: 35px;
+        margin-top: 2.4rem;
+        margin-left: 10px;
+    }
+
+    .confirm-password {
+        width: 23px;
+        margin-top: 0;
+    }
+
+    .registrationform-icon-input {
+        border-top-right-radius   : 0px;
+        border-bottom-right-radius: 0px;
+        width                     : 50px;
+        background-color          : rgb(255, 195, 18);
+        border                    : none;
+    }
+
+    .registrationform-input {
+        border-top-left-radius   : 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .registrationform-body {
+        width: 100%;
+    }
+
+    .registrationform-body-item {
+
+        margin-bottom: 15px;
+    }
+
+    .form-control:focus {
+        box-shadow  : none;
+        border-color: none;
+        outline     : none;
+    }
+
+    .btn-registration {
+        border-radius: 5px;
+        height       : 40px;
+        border       : none;
+        width        : 300px;
+        color        : rgba(58, 58, 58, 0.993);
+        ;
+        background-color   : rgb(255, 195, 18);
+        font-size          : 25px;
+        /* font-weight     : bold; */
+        padding-top        : 0;
+        margin-bottom      : 20px;
+    }
+
+    .remember {
+        color    : white;
+        font-size: 15px;
+    }
+
+    .quenmạkhau {
+        /* color: white; */
+        font-size: 15px;
+        float    : right;
+    }
+
+    .registration-or {
+        margin-bottom: 15px;
+    }
+
+    .registration-or h3 {
+        font-size  : 18px;
+        font-weight: bold;
+        color      : rgba(58, 58, 58, 0.993);
+        ;
+        line-height: 35px;
+        margin-left: 4px;
+    }
+
+    .or {
+        width           : 35px;
+        height          : 35px;
+        border-radius   : 50%;
+        background-color: rgb(255, 195, 18);
+    }
+
+    .icon-registration-or .icon-facebook {
+        background-color: rgb(13, 138, 240);
+        color           : white;
+        width           : 50px;
+        height          : 50px;
+        /* border       : 2px solid #000; */
+        border-radius   : 50%;
+        margin-right    : 10px;
+
+    }
+
+    .icon-registration-or .icon-google {
+        background-color: rgb(235, 64, 38);
+        border-radius   : 50%;
+        width           : 50px;
+        height          : 50px;
+        color           : white;
+
+    }
+
+    .icon-registration-or .icon-facebook i {
+        margin-left: 16px;
+        margin-top : 11px;
+        font-size  : 27px;
+    }
+
+    .icon-registration-or .icon-google i {
+        margin-left: 8px;
+        margin-top : 11px;
+        font-size  : 29px;
+    }
+
+
+    .dacotaikhoan {
+        font-size: 20px;
+        color    : white;
+    }
+
+    .dacotaikhoan p {
+        margin-left: 4px;
+        color: blue;
+
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .registration {
+        width           : 100%;
+        height          : 100%;
+        display         : none;
+        justify-content : center;
+        align-items     : center;
+        position        : absolute;
+        top             : 0;
+        z-index         : 7;
+        /* background-color: rgba(27, 27, 27, 0.308); */
+    }
+    
+    .registrationform {
+        width    : 40%;
+        min-width: auto;
+        /* height   : 100%; */
+        position        : absolute;
+        display         : block;
+        /* background-color: rgba(26, 25, 25, 0.829); */
+        padding         : 20px;
+        z-index         : 1;
+    }
+
+    .registrationform-header {
+        height: 100px;
+    }
+
+    .registrationform-header div h1 {
+        color      : white;
+        line-height: 100px;
+        font-size  : 50px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .confirm-password {
+        width: 23px;
+        margin-top: 0;
+    }
+
+    .registrationform-header div .registration-img-logo {
+        width: 80px;
+        height: 35px;
+        margin-top: 2.4rem;
+        margin-left: 10px;
+    }
+    .registrationform-icon-input {
+        border-top-right-radius   : 0px;
+        border-bottom-right-radius: 0px;
+        width                     : 50px;
+        background-color          : rgb(255, 195, 18);
+        border                    : none;
+    }
+
+    .registrationform-input {
+        border-top-left-radius   : 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .registrationform-body {
+        width: 100%;
+    }
+
+    .registrationform-body-item {
+
+        margin-bottom: 15px;
+    }
+
+    .form-control:focus {
+        box-shadow  : none;
+        border-color: none;
+        outline     : none;
+    }
+
+    .btn-registration {
+        border-radius: 5px;
+        height       : 40px;
+        border       : none;
+        width        : 300px;
+        color        : rgba(58, 58, 58, 0.993);
+        ;
+        background-color   : rgb(255, 195, 18);
+        font-size          : 25px;
+        /* font-weight     : bold; */
+        padding-top        : 0;
+        margin-bottom      : 20px;
+    }
+
+    .remember {
+        color    : white;
+        font-size: 15px;
+    }
+
+    .quenmạkhau {
+        /* color: white; */
+        font-size: 15px;
+        float    : right;
+    }
+
+    .registration-or {
+        margin-bottom: 15px;
+    }
+
+    .registration-or h3 {
+        font-size  : 18px;
+        font-weight: bold;
+        color      : rgba(58, 58, 58, 0.993);
+        ;
+        line-height: 35px;
+        margin-left: 4px;
+    }
+
+    .or {
+        width           : 35px;
+        height          : 35px;
+        border-radius   : 50%;
+        background-color: rgb(255, 195, 18);
+    }
+
+    .icon-registration-or .icon-facebook {
+        background-color: rgb(13, 138, 240);
+        color           : white;
+        width           : 50px;
+        height          : 50px;
+        /* border       : 2px solid #000; */
+        border-radius   : 50%;
+        margin-right    : 10px;
+
+    }
+
+    .icon-registration-or .icon-google {
+        background-color: rgb(235, 64, 38);
+        border-radius   : 50%;
+        width           : 50px;
+        height          : 50px;
+        color           : white;
+
+    }
+
+    .icon-registration-or .icon-facebook i {
+        margin-left: 16px;
+        margin-top : 11px;
+        font-size  : 27px;
+    }
+
+    .icon-registration-or .icon-google i {
+        margin-left: 8px;
+        margin-top : 11px;
+        font-size  : 29px;
+    }
+
+
+    .dacotaikhoan {
+        color    : white;
+        font-size: 20px;
+    }
+
+    .dacotaikhoan p {
+        margin-left: 4px;
+        color: blue;
+
+    }
+}
+
+@media (max-width:992px) {
+
+    .registration {
+        width           : 100%;
+        height          : 100%;
+        display         : none;
+        justify-content : center;
+        align-items     : center;
+        position        : absolute;
+        top             : 0;
+        z-index         : 7;
+        /* background-color: rgba(27, 27, 27, 0.308); */
+    }
+    
+    .registrationform {
+        width    : 40%;
+        min-width: auto;
+        /* height   : 100%; */
+        position        : absolute;
+        display         : block;
+        /* background-color: rgba(26, 25, 25, 0.829); */
+        padding         : 20px;
+        z-index         : 1;
+    }
+
+    .registrationform-header {
+        height: 100px;
+    }
+
+    .confirm-password {
+        width: 23px;
+        margin-top: 0;
+    }
+
+    .registrationform-header {
+        height: 100px;
+    }
+
+    .registrationform-header div h1 {
+        color      : white;
+        line-height: 100px;
+        font-size  : 38px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .registrationform-header div .registration-img-logo {
+        width: 80px;
+        height: 35px;
+        margin-top: 2.4rem;
+        margin-left: 10px;
+    }
+
+    .registrationform-icon-input {
+        border-top-right-radius   : 0px;
+        border-bottom-right-radius: 0px;
+        width                     : 50px;
+        background-color          : rgb(255, 195, 18);
+        border                    : none;
+    }
+
+    .registrationform-input {
+        border-top-left-radius   : 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .registrationform-body {
+        width: 100%;
+    }
+
+    .registrationform-body-item {
+
+        margin-bottom: 15px;
+    }
+
+    .form-control:focus {
+        box-shadow  : none;
+        border-color: none;
+        outline     : none;
+    }
+
+    .btn-registration {
+        border-radius      : 5px;
+        height             : 40px;
+        border             : none;
+        width              : 200px;
+        color              : rgba(58, 58, 58, 0.993);
+        background-color   : rgb(255, 195, 18);
+        font-size          : 23px;
+        /* font-weight     : bold; */
+        padding-top        : 0;
+        margin-bottom      : 20px;
+    }
+
+    .remember {
+        color    : white;
+        font-size: 15px;
+    }
+
+    .quenmạkhau {
+        /* color: white; */
+        font-size: 15px;
+        float    : right;
+    }
+
+    .registration-or {
+        margin-bottom: 15px;
+    }
+
+    .registration-or h3 {
+        font-size  : 16px;
+        font-weight: bold;
+        color      : rgba(58, 58, 58, 0.993);
+        ;
+        line-height: 30px;
+        margin-left: 3px;
+    }
+
+    .or {
+        width           : 30px;
+        height          : 30px;
+        border-radius   : 50%;
+        background-color: rgb(255, 195, 18);
+    }
+
+    .icon-registration-or .icon-facebook {
+        background-color: rgb(13, 138, 240);
+        color           : white;
+        width           : 43px;
+        height          : 43px;
+        /* border       : 2px solid #000; */
+        border-radius   : 50%;
+        margin-right    : 10px;
+
+    }
+
+    .icon-registration-or .icon-facebook i {
+        margin-left: 13px;
+        margin-top : 10px;
+        font-size  : 23px;
+    }
+
+    .icon-registration-or .icon-google {
+        background-color: rgb(235, 64, 38);
+        border-radius   : 50%;
+        width           : 43px;
+        color           : white;
+        height          : 43px;
+    }
+
+
+    .icon-registration-or .icon-google i {
+        margin-left: 5px;
+        margin-top : 9px;
+        font-size  : 26px;
+    }
+
+
+    .dacotaikhoan {
+        color    : white;
+        font-size: 20px;
+    }
+
+    .dacotaikhoan p {
+        margin-left: 4px;
+        color: blue;
+
+    }
+}
+
+
+@media (max-width:768px) {
+   
+    .registration {
+        width           : 100%;
+        height          : 100%;
+        display         : none;
+        justify-content : center;
+        align-items     : center;
+        position        : absolute;
+        top             : 0;
+        z-index         : 7;
+        /* background-color: rgba(27, 27, 27, 0.308); */
+    }
+    
+    .registrationform {
+        width    : 45%;
+        min-width: auto;
+        /* height   : 100%; */
+        position        : absolute;
+        display         : block;
+        /* background-color: rgba(26, 25, 25, 0.829); */
+        padding         : 20px;
+        z-index         : 1;
+    }
+
+    .registrationform-header {
+        height: 100px;
+    }
+   
+
+    .registrationform-header div h1 {
+        color      : white;
+        line-height: 100px;
+        font-size  : 36px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .registrationform-header div .registration-img-logo {
+        width: 80px;
+        height: 35px;
+        margin-top: 2.4rem;
+        margin-left: 10px;
+    }
+
+    .confirm-password {
+        width: 23px;
+        margin-top: 0;
+    }
+
+    .registrationform-body {
+        width: 100%;
+    }
+
+    .registrationform-icon-input {
+        border-top-right-radius   : 0px;
+        border-bottom-right-radius: 0px;
+        width                     : 50px;
+        background-color          : rgb(255, 195, 18);
+        border                    : none;
+    }
+
+    .registrationform-input {
+        border-top-left-radius   : 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .registrationform-body-item {
+
+        margin-bottom: 15px;
+    }
+
+    .form-control:focus {
+        box-shadow  : none;
+        border-color: none;
+        outline     : none;
+    }
+
+    .btn-registration {
+        border-radius      : 5px;
+        height             : 40px;
+        border             : none;
+        width              : 200px;
+        color              : rgba(58, 58, 58, 0.993);
+        background-color   : rgb(255, 195, 18);
+        font-size          : 23px;
+        /* font-weight     : bold; */
+        padding-top        : 0;
+        margin-bottom      : 20px;
+    }
+    .remember {
+        color    : white;
+        font-size: 15px;
+    }
+
+    .quenmạkhau {
+        /* color: white; */
+        font-size: 15px;
+        float    : right;
+    }
+
+    .registration-or {
+        margin-bottom: 15px;
+    }
+
+    .registration-or h3 {
+        font-size  : 16px;
+        font-weight: bold;
+        color      : rgba(58, 58, 58, 0.993);
+        ;
+        line-height: 30px;
+        margin-left: 3px;
+    }
+
+    .or {
+        width           : 30px;
+        height          : 30px;
+        border-radius   : 50%;
+        background-color: rgb(255, 195, 18);
+    }
+
+    .icon-registration-or .icon-facebook {
+        background-color: rgb(13, 138, 240);
+        color           : white;
+        width           : 43px;
+        height          : 43px;
+        /* border       : 2px solid #000; */
+        border-radius   : 50%;
+        margin-right    : 10px;
+
+    }
+
+    .icon-registration-or .icon-facebook i {
+        margin-left: 13px;
+        margin-top : 10px;
+        font-size  : 23px;
+    }
+
+    .icon-registration-or .icon-google {
+        background-color: rgb(235, 64, 38);
+        border-radius   : 50%;
+        width           : 43px;
+        color           : white;
+        height          : 43px;
+    }
+
+
+    .icon-registration-or .icon-google i {
+        margin-left: 5px;
+        margin-top : 9px;
+        font-size  : 26px;
+    }
+
+
+    .dacotaikhoan {
+        font-size: 20px;
+        color    : white;
+    }
+
+    .dacotaikhoan p {
+        margin-left: 4px;
+        color: blue;
+
+    }
+}
+
+@media (max-width:576px) {
+    
+    .registration {
+        width           : 100%;
+        height          : 100%;
+        display         : none;
+        justify-content : center;
+        align-items     : center;
+        position        : absolute;
+        top             : 0;
+        z-index         : 7;
+        /* background-color: rgba(27, 27, 27, 0.308); */
+    }
+    
+    .registrationform {
+        width    : 90%;
+        min-width: auto;
+        /* height   : 100%; */
+        position        : absolute;
+        display         : block;
+        /* background-color: rgba(26, 25, 25, 0.829); */
+        padding         : 20px;
+        z-index         : 1;
+    }
+
+    .registrationform-header {
+        height: 100px;
+    }
+    
+    .registrationform-header div h1 {
+        color      : white;
+        line-height: 100px;
+        font-size  : 38px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .confirm-password {
+        width: 23px;
+        margin-top: 0;
+    }
+  
+    .registrationform-header div .registration-img-logo {
+        width: 80px;
+        height: 35px;
+        margin-top: 2.4rem;
+        margin-left: 10px;
+    }
+
+    .registrationform-body {
+        width: 100%;
+    }
+
+    .registrationform-icon-input {
+        border-top-right-radius   : 0px;
+        border-bottom-right-radius: 0px;
+        width                     : 50px;
+        background-color          : rgb(255, 195, 18);
+        border                    : none;
+    }
+
+    .registrationform-input {
+        border-top-left-radius   : 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .registrationform-body-item {
+
+        margin-bottom: 15px;
+    }
+
+    .form-control:focus {
+        box-shadow  : none;
+        border-color: none;
+        outline     : none;
+    }
+
+    .btn-registration {
+        border-radius      : 5px;
+        height             : 40px;
+        border             : none;
+        width              : 50%;
+        color              : rgba(58, 58, 58, 0.993);
+        background-color   : rgb(255, 195, 18);
+        font-size          : 23px;
+        /* font-weight     : bold; */
+        padding-top        : 0;
+        margin-bottom      : 20px;
+    }
+
+    .remember {
+        color    : white;
+        font-size: 15px;
+    }
+
+    .quenmạkhau {
+        /* color: white; */
+        font-size: 15px;
+        float    : right;
+    }
+
+    .registration-or {
+        margin-bottom: 15px;
+    }
+
+    .registration-or h3 {
+        font-size  : 16px;
+        font-weight: bold;
+        color      : rgba(58, 58, 58, 0.993);
+        ;
+        line-height: 30px;
+        margin-left: 3px;
+    }
+
+    .or {
+        width           : 30px;
+        height          : 30px;
+        border-radius   : 50%;
+        background-color: rgb(255, 195, 18);
+    }
+
+    .icon-registration-or .icon-facebook {
+        background-color: rgb(13, 138, 240);
+        color           : white;
+        width           : 43px;
+        height          : 43px;
+        /* border       : 2px solid #000; */
+        border-radius   : 50%;
+        margin-right    : 10px;
+
+    }
+
+    .icon-registration-or .icon-facebook i {
+        margin-left: 13px;
+        margin-top : 10px;
+        font-size  : 23px;
+    }
+
+    .icon-registration-or .icon-google {
+        background-color: rgb(235, 64, 38);
+        border-radius   : 50%;
+        width           : 43px;
+        color           : white;
+        height          : 43px;
+    }
+
+
+    .icon-registration-or .icon-google i {
+        margin-left: 5px;
+        margin-top : 9px;
+        font-size  : 26px;
+    }
+
+
+    .dacotaikhoan {
+        font-size: 20px;
+        color    : white;
+    }
+
+    .dacotaikhoan p {
+        margin-left: 4px;
+        color: blue;
+
+    }
+}
